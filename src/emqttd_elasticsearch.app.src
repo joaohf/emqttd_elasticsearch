@@ -1,0 +1,14 @@
+{application, emqttd_elasticsearch,
+ [
+  {description, "emqttd elasticsearch plugin"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+		  erlastic_search,
+                  lib_cap
+                 ]},
+  {mod, { emqttd_elasticsearch_app, []}},
+  {env, []}
+ ]}.
